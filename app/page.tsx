@@ -45,9 +45,30 @@ export default function Home() {
         </motion.section>
       </main>
 
-      <About />
-      <Skills />
-      <Projects />
+      {/* 🔽 AJUSTES AQUI (SEM MEXER NOS COMPONENTES) */}
+      <section id="sobre" className="scroll-mt-24">
+        <About />
+      </section>
+
+      <section id="skills" className="scroll-mt-24">
+        <Skills />
+      </section>
+
+      <section id="projetos" className="scroll-mt-24">
+        <Projects />
+      </section>
+
+      <section id="contato" className="scroll-mt-24 py-24 bg-zinc-900 text-zinc-100 text-center">
+        <h2 className="text-3xl font-bold mb-4">Contato</h2>
+        <p className="text-zinc-300 mb-6">Vamos conversar?</p>
+
+        <a
+          href="mailto:seuemail@email.com"
+          className="inline-block px-6 py-3 rounded-xl bg-zinc-100 text-zinc-900 font-semibold hover:bg-zinc-200 transition"
+        >
+          Entrar em contato
+        </a>
+      </section>
     </>
   );
 }
