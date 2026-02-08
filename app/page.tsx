@@ -63,7 +63,7 @@ export default function Home() {
         <p className="text-zinc-300 mb-6">Vamos conversar?</p>
 
         <a
-          href="mailto:seuemail@email.com"
+          href="mailto:jg447081@email.com"
           className="inline-block px-6 py-3 rounded-xl bg-zinc-100 text-zinc-900 font-semibold hover:bg-zinc-200 transition"
         >
           Entrar em contato
