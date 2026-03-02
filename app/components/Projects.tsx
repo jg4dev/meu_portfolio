@@ -2,7 +2,7 @@ const projects = [
   {
     title: "Portfólio pessoal",
     description: "Meu site pessoal feito com Next.js e Tailwind CSS.",
-    github: "https://github.com/jg4dev",
+    github: "https://meu-portfolio-beige-omega.vercel.app/",
   },
   {
     title: "Sistema de login",
@@ -10,9 +10,9 @@ const projects = [
     github: "https://github.com/jg4dev",
   },
   {
-    title: "Landing page",
+    title: "Projeto oficina web",
     description: "Landing page moderna e responsiva.",
-    github: "https://github.com/jg4dev",
+    github: "https://juniorcar.vercel.app/",
   },
 ];
 
@@ -49,7 +49,7 @@ export default function Projects() {
                 rel="noopener noreferrer"
                 className="mt-6 inline-block text-sm font-semibold text-zinc-300 hover:text-white transition"
               >
-                Ver no GitHub →
+                Ver projeto →
               </a>
             </div>
           ))}

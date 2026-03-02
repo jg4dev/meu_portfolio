@@ -4,6 +4,7 @@ import "./globals.css";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import PageTransition from "./components/PageTransition";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,7 +19,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "João Gabriel | Desenvolvedor Front-end",
   description:
-    "Portfólio de João Gabriel, desenvolvedor front-end em formação, focado em React, Next.js e interfaces modernas.",
+    "Portfólio de João Gabriel, desenvolvedor front-end em formação.",
 };
 
 export default function RootLayout({
@@ -29,10 +30,13 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-900 text-zinc-100`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-900 text-zinc-100 overflow-x-hidden`}
       >
         <Navbar />
-        {children}
+
+        {/* 👇 Agora a animação está em Client Component */}
+        <PageTransition>{children}</PageTransition>
+
         <Footer />
       </body>
     </html>
